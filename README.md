@@ -1,4 +1,4 @@
-# 🔫📚 Influence of Education on Firearm Mortality – Big Data Analysis
+# Influence of Education on Firearm Mortality – Big Data Analysis
 
 Big Data analysis of **100,798 US gun deaths** (CDC data) to examine how **education level** relates to firearm mortality, built on the **Hadoop ecosystem: HDFS, Hive and Apache Zeppelin**.
 
@@ -6,20 +6,20 @@ Big Data analysis of **100,798 US gun deaths** (CDC data) to examine how **educa
 
 ---
 
-## 📂 Project Resources
+## Project Resources
 
-- 🎥 **Recorded demonstration** (5 min): [Watch on Google Drive](https://drive.google.com/file/d/1d-10-PfrflpXt4vC0djfiPgFNv5qKVtc/view?usp=sharing)
-- 📑 **Presentation**: [`presentation.pdf`](presentation.pdf)
-- 💾 **HiveQL queries**: [`queries.hql`](queries.hql)
-- 🖼️ **Screenshots** of every step: [`images/`](images)
+- **Recorded demonstration** (5 min): [Watch on Google Drive](https://drive.google.com/file/d/1d-10-PfrflpXt4vC0djfiPgFNv5qKVtc/view?usp=sharing)
+- **Presentation**: [`presentation.pdf`](presentation.pdf)
+- **HiveQL queries**: [`queries.hql`](queries.hql)
+- **Screenshots** of every step: [`images/`](images)
 
 ---
 
-## ❓ Problem
+## Problem
 
 Firearm mortality is a major public health issue in the USA. Most research focuses on race, age, rurality and gun ownership, while **education is rarely treated as a main factor**. This project compares education level directly against gun deaths.
 
-## 📊 Dataset
+## Dataset
 
 **Gun Deaths in America – CDC** (Kaggle): 100,798 rows, 9 columns.
 
@@ -30,7 +30,7 @@ Firearm mortality is a major public health issue in the USA. Most research focus
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 Kaggle CSV ──PuTTY/SSH──▶ HDFS ──▶ Hive (database cw2, table gun_deaths)
@@ -48,7 +48,7 @@ Kaggle CSV ──PuTTY/SSH──▶ HDFS ──▶ Hive (database cw2, table gun
 
 ---
 
-## ⚙️ Pipeline
+## Pipeline
 
 ### 1. Ingest to HDFS
 ```bash
@@ -73,7 +73,7 @@ Queries were run with the `%jdbc(hive)` interpreter and charted.
 
 ---
 
-## 📈 Results
+## Results
 
 **Deaths by intent:** suicide makes up nearly two-thirds of all gun deaths.
 
@@ -104,12 +104,12 @@ Queries were run with the `%jdbc(hive)` interpreter and charted.
 - **Less than HS** is the only group where homicide exceeds suicide.
 - Education **strongly protects against homicide** but only **weakly against suicide**.
 
-## 🚧 Limitations and Future Work
+## Limitations and Future Work
 - Education categories may hide socioeconomic factors; mental health and income aren't in the data.
 - Findings may not generalise beyond the US.
 - Future work: add years, states, gun ownership, poverty and mental-health data, and explore education × age, gender or location.
 
 ---
 
-## 👨‍💻 Author
+## Author
 **Eru Poudel** ([@Eru0705](https://github.com/Eru0705)) · MSc Computer Science and Technology, Ulster University
